@@ -7,7 +7,7 @@ Tugas implementasi sederhana *service* CRUD dengan skema REST API.
 | Ahmad Zidan | 19/439809/TK/48536 |
 | Denny Dewanta | 19/444045/TK/49241  |
 | Daffa Bil Nadzary | 19/439811/TK/48541  |
-| Iman Kahfi Aliza | 19/444045/TK/49241  |
+| Iman Kahfi Aliza | 19/440887/TK/48681  |
 | Muhammad Rifat Bagus Adikusuma | 20/456371/TK/50501  |
 
 # Pemakaian
