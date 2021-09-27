@@ -1,5 +1,5 @@
 # Tentang
-Tugas implementasi sederhana *service* CRUD dengan skema REST API.
+Aplikasi pemilu sederhana yang dibuat untuk memenuhi tugas implementasi *service* CRUD dengan skema REST API.
 
 # Anggota Kelompok
 | Nama | NIM |
@@ -15,7 +15,7 @@ Tugas implementasi sederhana *service* CRUD dengan skema REST API.
 > pip install requirements.txt
 
 Kemudian jalankan perintah berikut untuk memulai *service* API
-> uvicorn main:app --reload
+> uvicorn pemilu-kmteti.main:app --reload
 
-Untuk melihat dokumentasi, silakan menuju
+Untuk melihat dokumentasi API, silakan menuju
 >  http://localhost:8000/docs
