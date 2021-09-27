@@ -1,5 +1,5 @@
 # Tentang
-Aplikasi pemilu sederhana yang dibuat untuk memenuhi tugas implementasi *service* CRUD dengan skema REST API.
+Implementasi *service* CRUD dengan skema REST API untuk aplikasi pemilu sederhana. Dibuat untuk memenuhi penugasan mata kuliah TIF21-31-46 Pengembangan Aplikasi Web. 
 
 # Anggota Kelompok
 | Nama | NIM |
@@ -12,7 +12,7 @@ Aplikasi pemilu sederhana yang dibuat untuk memenuhi tugas implementasi *service
 
 # Pemakaian
 *Install* semua *package* dan *depedencies*-nya
-> pip install requirements.txt
+> pip install -U -r requirements.txt
 
 Kemudian jalankan perintah berikut untuk memulai *service* API
 > uvicorn pemilu-kmteti.main:app --reload
