@@ -5,6 +5,7 @@ Tugas implementasi sedeherna CRUD REST API.
 | NIM | Name |
 | :----------------: | :--------------: |
 | 19/439806/TK/48536 | Ahmad Zidan |
+| 19/439811/TK/48541 | Daffa Bil Nadzary |
 
 # Pemakaian
 *Install* semua *package* dan *depedencies*-nya
