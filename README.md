@@ -4,7 +4,7 @@ Implementasi *service* CRUD dengan skema REST API untuk aplikasi pemilu sederhan
 # Anggota Kelompok
 | Nama | NIM |
 | :----------------: | :--------------: |
-| Ahmad Zidan | 19/439809/TK/48536 |
+| Ahmad Zidan | 19/439806/TK/48536 |
 | Denny Dewanta | 19/444045/TK/49241  |
 | Daffa Bil Nadzary | 19/439811/TK/48541  |
 | Iman Kahfi Aliza | 19/440887/TK/48681  |
