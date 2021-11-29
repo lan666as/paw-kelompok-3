@@ -7,10 +7,12 @@ function Home() {
   return (
     <>
       <HeroSection {...homeObjOne} />
-      <HeroSection {...homeObjThree} />
-      <HeroSection {...homeObjTwo} />
+      <div id='1'>
       <Votes />
-      <HeroSection {...homeObjFour} />
+
+      </div>
+      
+      
     </>
   );
 }

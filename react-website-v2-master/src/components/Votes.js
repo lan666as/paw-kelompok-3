@@ -1,76 +1,84 @@
 import React from 'react';
+import { useState } from 'react';
 import { Button } from './Button';
 import './Votes.css';
 import { FaFire } from 'react-icons/fa';
+import {BiMale} from  'react-icons/bi';
 import { BsXDiamondFill } from 'react-icons/bs';
 import { GiCrystalize } from 'react-icons/gi';
 import { IconContext } from 'react-icons/lib';
+
 import { Link } from 'react-router-dom';
 
+
+
+
 function Votes() {
+  const [openVoteModal, setModalOpen] = useState(false);
   return (
     <IconContext.Provider value={{ color: '#fff', size: 64 }}>
       <div className='votes__section'>
         <div className='votes__wrapper'>
-          <h1 className='votes__heading'>votes</h1>
+          <h1 className='votes__heading'>VOTES</h1>
           <div className='votes__container'>
-            <Link to='/sign-up' className='votes__container-card'>
+            <div className='votes__container-card'>
               <div className='votes__container-cardInfo'>
                 <div className='icon'>
-                  <FaFire />
+                  <BiMale />
                 </div>
-                <h3>Starter</h3>
-                <h4>$8.99</h4>
-                <p>per month</p>
+                <h3>Bulan Ayu Puspita</h3>
+                <h4>TI 2020</h4>
+                
                 <ul className='votes__container-features'>
-                  <li>100 Transactions</li>
-                  <li>2% Cash Back</li>
-                  <li>$10,000 Limit</li>
+                  <li>Tegas</li>
+                  <li>Disiplin</li>
+                  <li>Terarah</li>
                 </ul>
-                <Button buttonSize='btn--wide' buttonColor='primary'>
-                  Choose Plan
-                </Button>
+                
+                
               </div>
-            </Link>
-            <Link to='/sign-up' className='votes__container-card'>
+            </div>
+            <div to='/sign-up' className='votes__container-card'>
               <div className='votes__container-cardInfo'>
                 <div className='icon'>
-                  <BsXDiamondFill />
+                  <BiMale />
                 </div>
-                <h3>Gold</h3>
-                <h4>$29.99</h4>
-                <p>per month</p>
+                <h3>Dani Sudarmana</h3>
+                <h4>TE 2020 </h4>
+                
                 <ul className='votes__container-features'>
-                  <li>1000 Transactions</li>
-                  <li>3.5% Cash Back</li>
-                  <li>$100,000 Limit</li>
+                  <li>Berani</li>
+                  <li>Kritis</li>
+                  <li>Tanggap dan Cerdas </li>
                 </ul>
-                <Button buttonSize='btn--wide' buttonColor='blue'>
-                  Choose Plan
-                </Button>
+                
               </div>
-            </Link>
-            <Link to='/sign-up' className='votes__container-card'>
+            </div>
+            <div to='/sign-up' className='votes__container-card'>
               <div className='votes__container-cardInfo'>
                 <div className='icon'>
-                  <GiCrystalize />
+                  <BiMale />
                 </div>
-                <h3>Diamond</h3>
-                <h4>$99.99</h4>
-                <p>per month</p>
+                <h3>Kukuh Putra</h3>
+                <h4>TB 2020</h4>
+                
                 <ul className='votes__container-features'>
-                  <li>Unlimited Transactions</li>
-                  <li>5% Cash Back</li>
-                  <li>Unlimited Spending</li>
+                  <li>Kerja</li>
+                  <li>Kerja</li>
+                  <li>Kerja</li>
                 </ul>
-                <Button buttonSize='btn--wide' buttonColor='primary'>
-                  Choose Plan
-                </Button>
+                
+                
               </div>
-            </Link>
+            </div>
+            
           </div>
-        </div>
+          <Link to='/vote-form' className='btn-link'>
+                    <Button className='VoteBtn' buttonStyle='btn-primary' buttonSize='btn--wide' buttonColor='blue'>Click to Vote</Button>
+          </Link>
       </div>
+        </div>
+        
     </IconContext.Provider>
   );
 }
