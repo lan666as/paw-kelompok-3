@@ -6,6 +6,24 @@ import re
 
 from . import crud, models, schemas
 from .database import SessionLocal, engine
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+origins = [
+    
+    'http://localhost:3000/'
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 
 models.Base.metadata.create_all(bind = engine)
 
@@ -18,7 +36,8 @@ def get_db():
     yield db
   finally:
     db.close()
- 
+
+
 #POST method
 @app.post("/suara", response_model = schemas.Suara)
 def create_suara(suara: schemas.SuaraCreate, db: Session = Depends(get_db)):
