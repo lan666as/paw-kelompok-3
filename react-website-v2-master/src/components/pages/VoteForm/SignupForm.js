@@ -49,15 +49,27 @@ const SignupForm = ({submitForm}) => {
                     />
                     {errors.niu && <p>{errors.niu}</p>}
                 </div>
-                <div className="dropdown">
+                <div className="form-inputs">
                     <label htmlFor="pilihan" className="form-label">
                         Pilihan
                     </label>
-                    <select value={dropdown} onChange={(e)=>{setDropdown(e.target.value)}}>
+                    <select value={values.pilihan} name="pilihan" onChange={handleChange}>
                         <option value="1">1. Muhammad Rifat</option>
                         <option value="2">2. Denny Dewanta</option>
                         <option value="3">3. Ahmad Zidan</option>
                     </select>
+                    {/* <label htmlFor="pilihan" className="form-label">
+                        Pilihan (1 digit)
+                    </label>
+                    <input 
+                        id="pilihan"
+                        type="text"
+                        name="pilihan"
+                        className="form-input"
+                        placeholder="Masukkan pilihan (1 digit)"
+                        value={values.pilihan}
+                        onChange={handleChange}
+                    /> */}
                 </div>
                 <button className="form-input-btn" type="submit">
                     Kirim

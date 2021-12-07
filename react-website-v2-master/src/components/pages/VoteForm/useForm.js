@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from'axios';
 
-const url='http://localhost:8000/docs#/default/create_suara_suara_post';
+const url='http://paw.sinau.tech:8000/suara';
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
